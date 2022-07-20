@@ -9,11 +9,13 @@ import {
   Input,
   InputGroup,
   InputLeftAddon,
-  InputRightAddon,
   InputLeftElement,
+  InputRightElement,
 } from "@chakra-ui/react";
 import React from "react";
 import { MdArrowDropDown } from "react-icons/md";
+import { AiFillStar } from "react-icons/ai";
+import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 const select = () => {
   return (
@@ -52,7 +54,7 @@ const Navbar = () => {
           </Box>
         </Stack>
 
-        <Stack>
+        <Stack mr="-8rem">
           <Box mt="0.5rem">
             <Flex direction="row">
               <Flex
@@ -81,15 +83,9 @@ const Navbar = () => {
 
                 <Divider height="1.3rem" orientation="vertical" />
               </Flex>
-              <Spacer />
-              <Flex gap="0.5rem" fontFamily="sans-serif" mr="-10.5rem">
-                <Box cursor="pointer">Login</Box>
-                <Box>|</Box>
-                <Box cursor="pointer">Register</Box>
-              </Flex>
             </Flex>
           </Box>
-          <Box ml="8rem">
+          <Box ml="10rem">
             <InputGroup size="md" pointer="cursor">
               <InputLeftAddon
                 bg="rgb(243,243,243)"
@@ -105,7 +101,6 @@ const Navbar = () => {
 
                 <Input
                   w="50rem"
-                  variant="outline"
                   placeholder="Start shopping ..."
                   textAlign="center"
                   borderTopLeftRadius="0"
@@ -113,10 +108,40 @@ const Navbar = () => {
                   borderColor="rgb(198,198,198)"
                   borderLeftColor="white"
                 />
-                <InputRightAddon>go</InputRightAddon>
+                <InputRightElement cursor="pointer">
+                  <Image
+                    w="4rem"
+                    h="2.5rem"
+                    src="	https://www.naturesbasket.co.in/Images/search-button.jpg"
+                    alt=""
+                  />
+                </InputRightElement>
               </InputGroup>
             </InputGroup>
           </Box>
+        </Stack>
+        <Spacer />
+        <Stack mt="0.5rem" mr="2rem">
+          <Flex gap="0.5rem" fontFamily="sans-serif">
+            <Box cursor="pointer">Login</Box>
+            <Box>|</Box>
+            <Box cursor="pointer">Register</Box>
+          </Flex>
+
+          <Flex
+            gap="1rem"
+            ml="2rem"
+            fontSize="0.9rem"
+            color="#393939"
+            fontFamily="sans-serif"
+            verticalAlign="middle"
+            textAlign="center"
+            float="left"
+          >
+            <AiFillStar size="2rem" color="rgb(132,190,59)" />
+            <Divider orientation="vertical" h="2rem" border="1px solid black" />
+            <MdOutlineAddShoppingCart size="2rem" color="rgb(132,190,59)" />
+          </Flex>
         </Stack>
       </Flex>
     </Stack>
