@@ -43,69 +43,81 @@ const Navbar = () => {
   return (
     <Stack>
       <Flex gap="4rem">
-        <Box cursor="pointer">
-          <Image
-            src="	https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
-            alt=""
-          />
-        </Box>
+        <Stack>
+          <Box cursor="pointer" ml="1rem">
+            <Image
+              src="	https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+              alt=""
+            />
+          </Box>
+        </Stack>
 
-        <Box display="flex" mt="0.5rem" fontFamily="sans-serif">
-          <Flex direction="column">
-            <Flex gap="1rem">
-              <Box cursor="pointer">Online Slots Availability</Box>
+        <Stack>
+          <Box mt="0.5rem">
+            <Flex direction="row">
+              <Flex
+                gap="1rem"
+                ml="2rem"
+                fontSize="0.9rem"
+                color="#393939"
+                fontFamily="sans-serif"
+                verticalAlign="middle"
+                textAlign="center"
+                float="left"
+              >
+                <Box cursor="pointer">Online Slots Availability</Box>
 
-              <Divider height="1.3rem" orientation="vertical" />
+                <Divider height="1.3rem" orientation="vertical" />
 
-              <Box cursor="pointer">Fresh & Fast</Box>
+                <Box cursor="pointer">Fresh & Fast</Box>
 
-              <Divider height="1.3rem" orientation="vertical" />
+                <Divider height="1.3rem" orientation="vertical" />
 
-              <Box cursor="pointer">Store Locator</Box>
+                <Box cursor="pointer">Store Locator</Box>
 
-              <Divider height="1.3rem" orientation="vertical" />
+                <Divider height="1.3rem" orientation="vertical" />
 
-              <Box cursor="pointer">Contact Us</Box>
+                <Box cursor="pointer">Contact Us</Box>
 
-              <Divider height="1.3rem" orientation="vertical" />
+                <Divider height="1.3rem" orientation="vertical" />
+              </Flex>
+              <Spacer />
+              <Flex gap="0.5rem" fontFamily="sans-serif" mr="-10.5rem">
+                <Box cursor="pointer">Login</Box>
+                <Box>|</Box>
+                <Box cursor="pointer">Register</Box>
+              </Flex>
             </Flex>
-            <Box>
-              <InputGroup size="md" pointer="cursor">
-                <InputLeftAddon
-                  bg="rgb(243,243,243)"
+          </Box>
+          <Box ml="8rem">
+            <InputGroup size="md" pointer="cursor">
+              <InputLeftAddon
+                bg="rgb(243,243,243)"
+                borderColor="rgb(198,198,198)"
+                cursor="pointer"
+                fontFamily="sans-serif"
+                fontSize="0.78rem"
+                children="Enter Pin"
+              />
+
+              <InputGroup>
+                <InputLeftElement w="8rem">{select()}</InputLeftElement>
+
+                <Input
+                  w="50rem"
+                  variant="outline"
+                  placeholder="Start shopping ..."
+                  textAlign="center"
+                  borderTopLeftRadius="0"
+                  borderBottomLeftRadius="0"
                   borderColor="rgb(198,198,198)"
-                  cursor="pointer"
-                  fontFamily="sans-serif"
-                  fontSize="0.78rem"
-                  children="Enter Pin"
+                  borderLeftColor="white"
                 />
-
-                <InputGroup>
-                  <InputLeftElement w="8rem">{select()}</InputLeftElement>
-
-                  <Input
-                    ml="8rem"
-                    w="40rem"
-                    variant="outline"
-                    placeholder="Start shopping ..."
-                    textAlign="center"
-                    borderTopLeftRadius="0"
-                    borderBottomLeftRadius="0"
-                    borderColor="rgb(198,198,198)"
-                    borderLeftColor="white"
-                  />
-                  <InputRightAddon>go</InputRightAddon>
-                </InputGroup>
+                <InputRightAddon>go</InputRightAddon>
               </InputGroup>
-            </Box>
-          </Flex>
-        </Box>
-        <Spacer />
-        <Flex gap="0.5rem" fontFamily="sans-serif" mt="0.5rem" mr="2rem">
-          <Box cursor="pointer">Login</Box>
-          <Box>|</Box>
-          <Box cursor="pointer">Register</Box>
-        </Flex>
+            </InputGroup>
+          </Box>
+        </Stack>
       </Flex>
     </Stack>
   );
