@@ -7,36 +7,55 @@ import {
   Text,
   Button,
   Tooltip,
+  ButtonGroup,
+  Badge,
+  Link,
 } from "@chakra-ui/react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 const TrendOfferF = () => {
   return (
-    <Stack ml="2rem" mt="2rem">
+    <Stack ml="1rem">
       <Flex>
         <Box
-          w="325px"
-          h="490px"
-          _hover={{ boxShadow: "rgba(0, 0, 0, 0.15) 2px 1.95px 2.6px" }}
+          w="330px"
+          h="500px"
+          align="center"
+          _hover={{
+            boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.96px 2.6px 1.8px",
+          }}
         >
           <Box>
-            <Image
-              borderRadius="10px"
-              src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/2c1837de-889b-4734-8a81-c235e775558f_425x425.jpg"
-              alt=""
-            />
+            <Tooltip
+              label=" HA TAPIOCA FLOUR 400 G"
+              bgColor="white"
+              color="black"
+              border="1px solid black"
+              placement="bottom"
+            >
+              <Image
+                cursor="pointer"
+                w="310px"
+                mt="0.5rem"
+                src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/5a6e1306-2151-4725-b046-10b8187f5d4f_425x425.jpg"
+                alt=""
+              />
+            </Tooltip>
           </Box>
-          <Box mt="1rem">
-            <Text
-              fontSize="11px"
+          <Box mt="7.5rem">
+            <Badge
+              variant="subtle"
+              fontSize="13px"
               fontWeight="bolder"
               letterSpacing="1px"
               color="#880033"
               fontFamily="sans-serif"
               marginBottom="3%"
+              borderRadius="50px"
+              // border="1px solid #880033"
             >
               DELIVERY IN 90 MINUTES
-            </Text>
+            </Badge>
             <Box w="300px">
               <Text
                 fontSize="14px"
@@ -45,8 +64,19 @@ const TrendOfferF = () => {
                 color="#111111"
                 fontFamily="sans-serif"
                 textAlign="center"
+                _hover={{ color: "#880033" }}
               >
-                ALF FARMS PORK HAM 150 G
+                <Tooltip
+                  label=" HA TAPIOCA FLOUR 400 G"
+                  bgColor="white"
+                  color="black"
+                  border="1px solid black"
+                  placement="bottom-end"
+                >
+                  <Link style={{ textDecoration: "none" }}>
+                    HA TAPIOCA FLOUR 400 G
+                  </Link>
+                </Tooltip>
               </Text>
             </Box>
             <Text
@@ -56,9 +86,9 @@ const TrendOfferF = () => {
               color="#001111"
               fontFamily="sans-serif"
             >
-              1Pc
+              <Link style={{ textDecoration: "none" }}> 1Pc</Link>
             </Text>
-            <Tooltip label=" Buy @ Rs.155.00/" aria-label="A tooltip">
+            <Tooltip label=" Buy @ Rs.210.00/" aria-label="A tooltip">
               <Text
                 fontSize="12px"
                 fontWeight="medium"
@@ -67,11 +97,11 @@ const TrendOfferF = () => {
                 fontFamily="sans-serif"
                 height="15px"
               >
-                Buy @ Rs.155.00/
+                Buy @ Rs.210.00/
               </Text>
             </Tooltip>
           </Box>
-          <Stack direction="row" spacing={2} mt="1rem">
+          <ButtonGroup direction="row" gap="5px" mt="1rem">
             <Button
               colorScheme="white"
               variant="outline"
@@ -81,19 +111,9 @@ const TrendOfferF = () => {
             >
               <Text>MRP</Text>
 
-              <Text ml="0.3rem" style={{ textDecoration: "line-through" }}>
-                ₹170
-              </Text>
+              <Text ml="0.3rem">₹170</Text>
             </Button>
-            <Button
-              colorScheme="white"
-              variant="outline"
-              borderColor="rgb(213,213,213)"
-              borderRadius="0.6rem"
-              cursor="text"
-            >
-              <Text>₹155.0</Text>
-            </Button>
+
             <Button
               textDecoration="none"
               leftIcon={<MdOutlineAddShoppingCart />}
@@ -106,7 +126,7 @@ const TrendOfferF = () => {
             >
               ADD
             </Button>
-          </Stack>
+          </ButtonGroup>
         </Box>
       </Flex>
     </Stack>

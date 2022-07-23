@@ -13,9 +13,9 @@ import {
 } from "@chakra-ui/react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
-const TrendOfferG = () => {
+const WhatsOfferC = () => {
   return (
-    <Stack ml="1rem">
+    <Stack ml="2rem">
       <Flex>
         <Box
           w="330px"
@@ -27,17 +27,19 @@ const TrendOfferG = () => {
         >
           <Box>
             <Tooltip
-              label=" HA TAPIOCA FLOUR 400 G"
+              label="HA ORGANIC MOONG DAL YELLOW SPLIT 500G"
               bgColor="white"
               color="black"
               border="1px solid black"
               placement="bottom"
             >
               <Image
+                boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
+                borderRadius="10px"
                 cursor="pointer"
                 w="310px"
                 mt="0.5rem"
-                src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/21595fb0-9e8a-4abb-b584-dda8f68777f1_425x425.jpg"
+                src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/120d587f-37c9-4743-bc37-2cbb7bd57025_425x425.jpg"
                 alt=""
               />
             </Tooltip>
@@ -52,7 +54,6 @@ const TrendOfferG = () => {
               fontFamily="sans-serif"
               marginBottom="3%"
               borderRadius="50px"
-              // border="1px solid #880033"
             >
               DELIVERY IN 90 MINUTES
             </Badge>
@@ -67,14 +68,14 @@ const TrendOfferG = () => {
                 _hover={{ color: "#880033" }}
               >
                 <Tooltip
-                  label=" HA TAPIOCA FLOUR 400 G"
+                  label="HA ORGANIC MOONG DAL YELLOW SPLIT 500G"
                   bgColor="white"
                   color="black"
                   border="1px solid black"
                   placement="bottom-end"
                 >
                   <Link style={{ textDecoration: "none" }}>
-                    HA TAPIOCA FLOUR 400 G
+                    HA ORGANIC MOONG DAL YELLOW SPLIT
                   </Link>
                 </Tooltip>
               </Text>
@@ -88,7 +89,7 @@ const TrendOfferG = () => {
             >
               <Link style={{ textDecoration: "none" }}> 1Pc</Link>
             </Text>
-            <Tooltip label=" Buy @ Rs.210.00/" aria-label="A tooltip">
+            <Tooltip label=" Buy @ Rs.149.00/" aria-label="A tooltip">
               <Text
                 fontSize="12px"
                 fontWeight="medium"
@@ -97,7 +98,7 @@ const TrendOfferG = () => {
                 fontFamily="sans-serif"
                 height="15px"
               >
-                Buy @ Rs.210.00/
+                Buy @ Rs.149.00/
               </Text>
             </Tooltip>
           </Box>
@@ -111,7 +112,7 @@ const TrendOfferG = () => {
             >
               <Text>MRP</Text>
 
-              <Text ml="0.3rem">₹170</Text>
+              <Text ml="0.3rem">₹149</Text>
             </Button>
 
             <Button
@@ -133,4 +134,4 @@ const TrendOfferG = () => {
   );
 };
 
-export default TrendOfferG;
+export default WhatsOfferC;
