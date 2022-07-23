@@ -1,24 +1,21 @@
 import React, { useState } from "react";
 import { Box, IconButton, useBreakpointValue, Stack } from "@chakra-ui/react";
 // Here I used react-icons package for the icons
-import { BiLeftArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import ExoticVegetables from "./ExoticVegetables";
-import MeatPoultry from "./MeatPoultry";
-import FreshArtisnal from "./FreshArtisnal";
-import DailyEssentials from "./DailyEssentials";
-import Organic from "./Organic";
-import ReadyToEat from "./ReadyToEat";
-import GiftStudio from "./GiftStudio";
-import FineTea from "./FineTea";
-import HealthyFoods from "./HealthyFoods";
-import IndianGrocery from "./IndianGrocery";
-import Confectionary from "./Confectionary";
-import Cuisine from "./Cuisine";
+import TrendOfferA from "./TrendOfferA";
+import TrendOfferB from "./TrendOfferB";
+import TrendOfferC from "./TrendOfferC";
+import TrendOfferD from "./TrendOfferD";
+import TrendOfferE from "./TrendOfferE";
+import TrendOfferF from "./TrendOfferF";
+import TrendOfferG from "./TrendOfferG";
+import TrendOfferH from "./TrendOfferH";
+import TrendOfferI from "./TrendOfferI";
+import TrendOfferJ from "./TrendOfferJ";
 
 // Settings for the slider
 const settings = {
@@ -33,7 +30,7 @@ const settings = {
   slidesToScroll: 4,
 };
 
-export default function Carousel() {
+export default function CarouselTrend() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = useState();
@@ -78,43 +75,52 @@ export default function Carousel() {
           <BiLeftArrowAlt />
         </IconButton>
 
+        {/* Right Icon */}
+        <IconButton
+          aria-label="right-arrow"
+          colorScheme="messenger"
+          borderRadius="full"
+          position="absolute"
+          right={side}
+          top={top}
+          transform={"translate(0%, -50%)"}
+          zIndex={2}
+          onClick={() => slider?.slickNext()}
+        >
+          <BiRightArrowAlt />
+        </IconButton>
+
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
           <Box>
-            <ExoticVegetables />
+            <TrendOfferA />
           </Box>
           <Box>
-            <MeatPoultry />
+            <TrendOfferB />
           </Box>
           <Box>
-            <FreshArtisnal />
+            <TrendOfferC />
           </Box>
           <Box>
-            <DailyEssentials />
+            <TrendOfferD />
           </Box>
           <Box>
-            <Organic />
+            <TrendOfferE />
           </Box>
           <Box>
-            <ReadyToEat />
+            <TrendOfferF />
           </Box>
           <Box>
-            <GiftStudio />
+            <TrendOfferG />
           </Box>
           <Box>
-            <FineTea />
+            <TrendOfferH />
           </Box>
           <Box>
-            <HealthyFoods />
+            <TrendOfferI />
           </Box>
           <Box>
-            <IndianGrocery />
-          </Box>
-          <Box>
-            <Confectionary />
-          </Box>
-          <Box>
-            <Cuisine />
+            <TrendOfferJ />
           </Box>
         </Slider>
       </Box>

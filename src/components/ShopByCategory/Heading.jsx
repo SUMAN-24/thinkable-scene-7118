@@ -1,13 +1,18 @@
-import { Stack, Divider, Heading, Flex, Box, Spacer } from "@chakra-ui/react";
+import { Stack, Divider, Heading, Flex, Spacer, Box } from "@chakra-ui/react";
 import React from "react";
-import DailyEssentials from "./DailyEssentials";
-import ExoticVegetables from "./ExoticVegetables";
-import FineTea from "./FineTea";
-import FreshArtisnal from "./FreshArtisnal";
-import GiftStudio from "./GiftStudio";
-import MeatPoultry from "./MeatPoultry";
-import Organic from "./Organic";
-import ReadyToEat from "./ReadyToEat";
+import Carousel from "./Carousel";
+// import Confectionary from "./Confectionary";
+// import Cuisine from "./Cuisine";
+// import DailyEssentials from "./DailyEssentials";
+// import ExoticVegetables from "./ExoticVegetables";
+// import FineTea from "./FineTea";
+// import FreshArtisnal from "./FreshArtisnal";
+// import GiftStudio from "./GiftStudio";
+// import HealthyFoods from "./HealthyFoods";
+// import IndianGrocery from "./IndianGrocery";
+// import MeatPoultry from "./MeatPoultry";
+// import Organic from "./Organic";
+// import ReadyToEat from "./ReadyToEat";
 
 const Headings = () => {
   return (
@@ -29,18 +34,11 @@ const Headings = () => {
         <Divider w="20rem" orientation="horizontal" mr="17rem" mt="0.5rem" />
       </Flex>
 
-      <Box>
-        <Flex>
-          <ExoticVegetables />
-          <MeatPoultry />
-          <FreshArtisnal />
-          <DailyEssentials />
-          <Organic />
-          <ReadyToEat />
-          <GiftStudio />
-          <FineTea />
-        </Flex>
-      </Box>
+      <Stack>
+        <Box mt="1rem">
+          <Carousel />
+        </Box>
+      </Stack>
     </Stack>
   );
 };
