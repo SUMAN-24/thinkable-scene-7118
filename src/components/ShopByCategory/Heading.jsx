@@ -34,22 +34,6 @@ const Headings = () => {
         <Divider w="20rem" orientation="horizontal" mr="17rem" mt="0.5rem" />
       </Flex>
 
-      {/* <Box>
-        <Flex>
-          <ExoticVegetables />
-          <MeatPoultry />
-          <FreshArtisnal />
-          <DailyEssentials />
-          <Organic />
-          <ReadyToEat />
-          <GiftStudio />
-          <FineTea />
-          <HealthyFoods />
-          <IndianGrocery />
-          <Confectionary />
-          <Cuisine />
-        </Flex>
-      </Box> */}
       <Stack>
         <Box mt="1rem">
           <Carousel />
