@@ -1,4 +1,14 @@
-import { Container, Heading, Spacer, Stack } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  Spacer,
+  Stack,
+  Box,
+  Image,
+  Flex,
+  Input,
+  Button,
+} from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
@@ -56,15 +66,150 @@ const Footer = () => {
         store at best prices.
       </Container>
       <Spacer />
-      <Container
-        maxW="67rem"
-        justifyContent="flex-start"
-        color="rgb(133,134,135)"
-      >
+      <Container maxW="67rem" justifyContent="left" color="rgb(133,134,135)">
         Find a variety of Best Christmas gifts such as delightful Cakes,
         Chocolates, Cookies, Turkey, Stollen, Gourmet Gift Baskets, Sweets &
         Lots More Here
       </Container>
+      <Spacer />
+      <Spacer />
+
+      <Box bgColor="rgb(251,251,251)" h="300px" mt="2rem" w="full">
+        <Flex>
+          <Box mt="2rem" w="200px" ml="5rem">
+            <Flex direction="column" gap="1rem">
+              <Heading fontSize="1rem" color="rgb(85,92,117)">
+                DOWNLOAD THE APP
+              </Heading>
+
+              <Image
+                w="20rem"
+                src="https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg"
+                alt=""
+              />
+              <Image
+                w="20rem"
+                src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
+                alt=""
+              />
+            </Flex>
+          </Box>
+
+          <Box mt="2rem" w="210px" ml="3rem">
+            <Flex direction="column" gap="1rem">
+              <Heading ml="-4rem" fontSize="1rem" color="rgb(85,92,117)">
+                ABOUT US
+              </Heading>
+              <Box
+                w="180px"
+                ml="2.6rem"
+                color="rgb(133,134,135)"
+                fontFamily="body"
+                fontSize="0.92rem"
+                fontWeight="630"
+              >
+                <Flex direction="column" ml="-1rem">
+                  <Box ml="-7.4rem">About Us</Box>
+                  <Box ml="-2.4rem">Our Vision & Purpose</Box>
+                  <Box ml="-3.9rem"> Quality Standards</Box>
+                  <Box ml="-9rem">FAQs</Box>
+                  <Box ml="-1.8rem">Available Delivery Slot</Box>
+                  <Box ml="-4.3rem">Vendor Connect</Box>
+                </Flex>
+              </Box>
+              <Heading ml="-4rem" fontSize="1rem" color="rgb(85,92,117)">
+                CAREERS
+              </Heading>
+              <Box
+                w="200px"
+                ml="3.7rem"
+                color="rgb(133,134,135)"
+                fontFamily="body"
+                fontSize="0.92rem"
+                fontWeight="630"
+              >
+                <Box ml="-9.9rem">Work with us</Box>
+              </Box>
+            </Flex>
+          </Box>
+
+          <Box mt="2rem" w="300px" ml="-1rem">
+            <Flex direction="column" gap="1rem">
+              <Heading ml="-3.9rem" fontSize="1rem" color="rgb(85,92,117)">
+                NEWS & MEDIA
+              </Heading>
+              <Box
+                w="200px"
+                ml="3.7rem"
+                color="rgb(133,134,135)"
+                fontFamily="body"
+                fontSize="0.92rem"
+                fontWeight="630"
+              >
+                <Flex direction="column" ml="-1rem">
+                  <Box ml="-5.8rem">Press releases</Box>
+                  <Box ml="-6.5rem">Newsletters</Box>
+                  <Box ml="-8.9rem">Events</Box>
+                  <Box ml="-6rem">Photo gallery</Box>
+                  <Box ml="-8.4rem">Recipes</Box>
+                  <Box ml="-9.1rem">NBTV</Box>
+                </Flex>
+              </Box>
+            </Flex>
+          </Box>
+
+          <Box mt="2rem" w="300px" ml="-5rem">
+            <Flex direction="column" gap="1rem">
+              <Heading ml="-4.7rem" fontSize="1rem" color="rgb(85,92,117)">
+                OUR POLICIES
+              </Heading>
+              <Box
+                w="200px"
+                ml="3.7rem"
+                color="rgb(133,134,135)"
+                fontFamily="body"
+                fontSize="0.92rem"
+                fontWeight="630"
+              >
+                <Flex direction="column" ml="-1rem">
+                  <Box ml="-5.8rem">Privacy Policy</Box>
+                  <Box ml="-5.3rem">Payment Policy</Box>
+                  <Box ml="-7.1rem">Disclaimer</Box>
+                  <Box ml="-4.4rem">Grievance Officer</Box>
+                </Flex>
+              </Box>
+            </Flex>
+          </Box>
+
+          <Box mt="2rem" w="400px" ml="-3rem">
+            <Flex direction="column" gap="1rem">
+              <Heading ml="-4.7rem" fontSize="1rem" color="rgb(85,92,117)">
+                SIGN UP TO STAY UPDATED
+              </Heading>
+              <Box
+                w="400px"
+                ml="1rem"
+                color="rgb(133,134,135)"
+                fontFamily="body"
+                fontSize="0.92rem"
+                fontWeight="630"
+              >
+                <Input
+                  mb="2rem"
+                  w="320px"
+                  h="4rem"
+                  textAlign="center"
+                  placeholder="ENTER YOUR EMAIL ADDRESS"
+                />
+
+                <Button bgColor="rgb(153,198,85)" color="white">
+                  SUBSCRIBE
+                </Button>
+              </Box>
+            </Flex>
+          </Box>
+        </Flex>
+      </Box>
     </Stack>
   );
 };
