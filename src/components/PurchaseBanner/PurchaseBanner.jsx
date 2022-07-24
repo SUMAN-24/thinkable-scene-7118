@@ -35,12 +35,13 @@ export default function PurchaseBanner() {
   const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   return (
-    <Stack>
+    <Stack mt="-1.5rem" ml="1rem" mr="1rem">
       <Box
         position={"relative"}
         height={"600px"}
         width={"full"}
         overflow={"hidden"}
+        borderRadius="10px"
       >
         {/* CSS files for react-slick */}
         <link

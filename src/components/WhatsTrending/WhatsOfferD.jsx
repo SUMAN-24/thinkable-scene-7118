@@ -13,9 +13,9 @@ import {
 } from "@chakra-ui/react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
-const TrendOfferG = () => {
+const WhatsOfferD = () => {
   return (
-    <Stack ml="1rem">
+    <Stack ml="2rem">
       <Flex>
         <Box
           w="330px"
@@ -34,10 +34,12 @@ const TrendOfferG = () => {
               placement="bottom"
             >
               <Image
+                boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
+                borderRadius="10px"
                 cursor="pointer"
                 w="310px"
                 mt="0.5rem"
-                src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/21595fb0-9e8a-4abb-b584-dda8f68777f1_425x425.jpg"
+                src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg"
                 alt=""
               />
             </Tooltip>
@@ -111,7 +113,7 @@ const TrendOfferG = () => {
             >
               <Text>MRP</Text>
 
-              <Text ml="0.3rem">₹170</Text>
+              <Text ml="0.3rem">₹210</Text>
             </Button>
 
             <Button
@@ -133,4 +135,4 @@ const TrendOfferG = () => {
   );
 };
 
-export default TrendOfferG;
+export default WhatsOfferD;
