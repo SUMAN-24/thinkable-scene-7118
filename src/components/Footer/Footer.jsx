@@ -51,8 +51,8 @@ const Footer = () => {
       </Container>
       <Spacer />
       <Spacer />
-      <Heading maxW="28rem" fontSize="1.4rem">
-        Best Online Grocery Supermarket India
+      <Heading maxW="30rem" fontSize="1.4rem">
+        Online Grocery Supermarket Shopping India
       </Heading>
       <Container maxW="88.6rem" justifyContent="flex-start">
         With our wide range of groceries available, Nature’s Basket is a large
@@ -198,8 +198,12 @@ const Footer = () => {
                   mb="2rem"
                   w="320px"
                   h="4rem"
-                  textAlign="center"
+                  textAlign="left"
+                  bgColor="white"
                   placeholder="ENTER YOUR EMAIL ADDRESS"
+                  focusBorderColor="green.600"
+                  variant="outline"
+                  borderColor="black"
                 />
 
                 <Button bgColor="rgb(153,198,85)" color="white">
