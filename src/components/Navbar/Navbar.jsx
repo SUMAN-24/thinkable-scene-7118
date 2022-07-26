@@ -18,6 +18,9 @@ import { MdArrowDropDown } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import MainNav from "./MainNav";
+import LoginModal from "./LoginModal";
+import RegisterModal from "./RegisterModal";
+import { Link as ReachLink } from "react-router-dom";
 
 const select = () => {
   return (
@@ -31,6 +34,7 @@ const select = () => {
       width="9rem"
       fontFamily="sans-serif"
       fontSize="0.78rem"
+      focusBorderColor="none"
     >
       <option>Mumbai</option>
       <option>Pune</option>
@@ -49,11 +53,13 @@ const Navbar = () => {
       <Stack>
         <Flex gap="4rem">
           <Stack>
-            <Box cursor="pointer" ml="1rem">
-              <Image
-                src="	https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
-                alt=""
-              />
+            <Box ml="1rem">
+              <Link as={ReachLink} to="/">
+                <Image
+                  src="	https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+                  alt=""
+                />
+              </Link>
             </Box>
           </Stack>
 
@@ -110,6 +116,7 @@ const Navbar = () => {
                     borderBottomLeftRadius="0"
                     borderColor="rgb(198,198,198)"
                     borderLeftColor="white"
+                    focusBorderColor="none"
                   />
                   <InputRightElement cursor="pointer">
                     <Image
@@ -126,9 +133,13 @@ const Navbar = () => {
           <Spacer />
           <Stack mt="0.5rem" mr="2rem">
             <Flex gap="0.5rem" fontFamily="sans-serif">
-              <Link cursor="pointer">Login</Link>
+              <Link cursor="pointer">
+                <LoginModal />
+              </Link>
               <Box>|</Box>
-              <Link cursor="pointer">Register</Link>
+              <Link cursor="pointer">
+                <RegisterModal />
+              </Link>
             </Flex>
 
             <Flex
